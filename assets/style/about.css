@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* color font */
+  --color-white: #ffffff;
+  --color-white2: #bababa;
+  --color-white3: #cdcdcd;
+  --color-white4: #adadad38;
+  --color-black: #000000;
+
+  /* background */
+  --bg-white: #d7e2e4;
+  --bg-grey: #cfd7d9;
+  --bg-dark: #1e1e1e;
+  --bg-dark2: #3e3e3e;
+  --bg-dark3: #5c605a;
+  --bg-dark4: #dedede;
+  --bg-input: #dcdde1;
+
+  /* font size */
+  --px-10: 10px;
+  --px-12: 12px;
+  --px-14: 14px;
+  --px-16: 16px;
+  --px-18: 18px;
+  --px-20: 20px;
+  --px-22: 22px;
+  --px-24: 24px;
+  --px-28: 28px;
+  --px-30: 30px;
+  --px-36: 36px;
+  --px-46: 46px;
+
+  /* font weight */
+  --weight-300: 200;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent;
+  height: 90px;
+}
+
+.navbar .container a {
+  color: var(--bg-dark2);
+}
+
+.navbar .container .navbar-brand {
+  font-family: 'Nasalization', sans-serif;
+}
+
+.navbar .container .collapse .navbar-nav .nav-about {
+  font-weight: 400;
+  border-bottom: 2px solid var(--color-black);
+  color: var(--color-black);
+}
+
+.navbar .container .collapse .navbar-nav .nav-item a:hover {
+  color: var(--color-white);
+}
+
+.navbar .container .collapse .navbar-nav .nav-item .signup {
+  color: var(--color-black);
+  background-color: transparent;
+  border-color: var(--color-black);
+}
+
+.navbar .container .collapse .navbar-nav .nav-item .signup:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+/* navbar scroll */
+.sticky {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.sticky .container a {
+  color: var(--color-black);
+}
+
+.sticky .container .collapse .navbar-nav .nav-about {
+  font-weight: 400;
+  border-bottom: 2px solid var(--color-black);
+  color: var(--color-black);
+}
+
+.sticky .container .collapse .navbar-nav .nav-item .signup {
+  color: var(--color-black);
+  background-color: transparent;
+  border-color: var(--color-black);
+}
+
+.sticky .container .collapse .navbar-nav .nav-item .signup:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+
+.section1 {
+  height: 100px;
+}
+
+.section1 .card {
+  background-color: transparent;
+  margin-top: 140px;
+  margin-left: 100px;
+  border-top: 3px solid var(--color-black);
+  border-left: 3px solid var(--color-black);
+  border-bottom: none;
+  border-right: none;
+  width: 100%;
+  height: 1111px;
+  z-index: -1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section1 .card .col-lg-4 {
+  padding: 30px 40px;
+}
+
+.section1 .card h1 {
+  font-size: var(--px-46);
+}
+
+.section1 .card h1 span {
+  color: #324EDF;
+}
+
+.section1 .card p span {
+  color: #324EDF;
+  font-weight: var(--weight-600);
+}
+
+.section1 .card img {
+  margin-left: 14%;
+}
+
+.section1 .card .button {
+  margin-top: 30px;
+}
+
+.section1 .card .button a {
+  font-size: var(--px-14);
+  text-decoration: none;
+  color: white;
+  background-color: #324EDF;
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #324EDF;
+  transition: all 0.3s ease;
+}
+
+.section1 .card .button a:hover {
+  border: 1px solid #324EDF !important;
+  transition: all 0.3s ease !important;
+  background: transparent !important;
+}
+
+.section1 .card .azka {
+  margin-left:  20px;
+}
+
+.section1 .card .text-box-center .number h3{
+  color: var(--color-white) !important;
+  background-color: var(--color-black) !important;
+  width: 50px;
+  height: 50px;
+  padding-top: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+
+}
+
+.section1 .card .text-box {
+  background-color: #2A2A2A;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  padding: 20px 20px;
+}
+
+.section1 .card .text-box-center {
+  color: var(--color-black);
+  background-color: #BFBFBF38;
+  width: 74%;
+  height: auto;
+  margin-left: auto;
+  padding: 20px 20px;
+}
+
+.section1 .card .text-box-center .title .block h4 {
+  font-size: var(--px-18);
+  color: var(--color-black) !important;
+  font-weight: var(--weight-500);
+}
+
+.section1 .card .text-box-center .title .block p {
+  font-size: var(--px-14) !important;
+  color: var(--color-black) !important;
+  font-weight: var(--weight-300) !important;
+}
+
+.section1 .card .text-box-center .sosmed p {
+  color: var(--color-black) !important;
+  font-weight: var(--weight-300);
+  font-size: var(--px-14);
+  margin-left: 14px;
+  margin-top: 4px;
+}
+
+.section1 .card .text-box .title {
+  color: var(--color-white);
+  margin-top: 20px;
+}
+
+.section1 .card .text-box .title .number h3 {
+  background-color: var(--bg-white);
+  color: var(--color-black);
+  width: 50px;
+  height: 50px;
+  padding-top: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.section1 .card .text-box .title .block {
+  margin-left: 20px;
+}
+
+.section1 .card .text-box .title .block h4 {
+  font-size: var(--px-18);
+  color: var(--color-white);
+  font-weight: var(--weight-500);
+}
+
+.section1 .card .text-box .title .block p {
+  font-size: var(--px-14);
+  color: var(--color-white);
+  font-weight: var(--weight-300);
+}
+
+.section1 .card .text-box .sosmed  {
+  margin-top: 20px;
+}
+
+.section1 .card .text-box .sosmed  .group {
+  margin-top: 10px;
+}
+
+.section1 .card .text-box .sosmed p {
+  color: var(--color-white);
+  font-weight: var(--weight-300);
+  font-size: var(--px-14);
+  margin-left: 14px;
+  margin-top: 4px;
+}
+
+.section1 .card .text-box .sosmed .image img {
+  width: 28px;
+}
+
+/* footer */
+.footer {
+  background-color: #212529;
+  margin-top: 1000px;
+}
+
+.footer .content {
+  padding: 80px 0px;
+}
+
+.footer .container .content .title-footer h1 {
+  color: var(--color-white);
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.footer .container .content .list-content .row .col-lg-3 .title-list-content h1 {
+  color: var(--color-white);
+  font-size: 28px;
+  margin: 0px;
+}
+
+.footer .container .content .list-content .row .col-lg-3 .content-footer ul li {
+  padding-top: 6px;
+}
+
+.footer .container .content .list-content .row .col-lg-3 .content-footer ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.footer .container .content .list-content .row .col-lg-3.content-footer p {
+  color: var(--color-white);
+}
+
+.footer .container .content .list-content .content-row {
+  border-bottom: 3px solid var(--color-white);
+}

@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f8fe;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* color font */
+  --color-white: #ffffff;
+  --color-white2: #bababa;
+  --color-white3: #cdcdcd;
+  --color-white4: #adadad38;
+  --color-black: #000000;
+
+  /* background */
+  --bg-white: #d7e2e4;
+  --bg-grey: #cfd7d9;
+  --bg-dark: #1e1e1e;
+  --bg-dark2: #3e3e3e;
+  --bg-dark3: #5c605a;
+  --bg-dark4: #dedede;
+  --bg-input: #dcdde1;
+
+  /* font size */
+  --px-10: 10px;
+  --px-12: 12px;
+  --px-14: 14px;
+  --px-16: 16px;
+  --px-18: 18px;
+  --px-20: 20px;
+  --px-22: 22px;
+  --px-24: 24px;
+  --px-28: 28px;
+  --px-30: 30px;
+  --px-36: 36px;
+  --px-46: 46px;
+
+  /* font weight */
+  --weight-300: 200;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+}
+
+.row {
+  margin: 0px;
+}
+
+.right-col {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.right-col::-webkit-scrollbar {
+  display: none;
+}
+
+.right-col .wrapper-card {
+  height: 800px;
+  width: 500px;
+  margin: 50px 114px;
+}
+
+.right-col .wrapper-card .title h1 {
+  color: var(--bg-dark);
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.right-col .wrapper-card .title a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.right-col .wrapper-card .content {
+  margin-top: 50px;
+}
+
+.right-col .wrapper-card .content p {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.right-col .wrapper-card .content p span {
+  color: #0141e9;
+}
+
+.right-col .wrapper-card .content h1 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.right-col .wrapper-card .content input {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background: #ebebeb;
+  padding: 0px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.right-col .wrapper-card .content .eye-image {
+  position: relative;
+  left: 440px;
+  bottom: 40px;
+}
+
+.right-col .wrapper-card .content .blue-button {
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+.right-col .wrapper-card .content .blue-button img {
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
+
+.right-col .wrapper-card .content .blue-button .sign-up {
+  border-radius: 8px;
+  background: #0141e9;
+  border: 1px solid #0141e9;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  width: 100%;
+  text-decoration: none;
+}
+
+.right-col .wrapper-card .content .blue-button button {
+  border-radius: 8px;
+  background: #0141e9;
+  border: 1px solid #0141e9;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  width: 100%;
+  height: 56px;
+  text-decoration: none;
+}
+
+.right-col .wrapper-card .content .text-sign-in p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6d6d6db2;
+}
+
+.right-col .wrapper-card .content .text-sign-in a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: #0141e9;
+}
+
+.left-col {
+  max-width: 45%;
+  height: max-content;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/login-this-bg.jpg);
+  height: 100vh;
+}
+
+.left-col h1 {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--bg-dark);
+  padding: 200px 90px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+
+  .right-col .wrapper-card .title a {
+    margin-right: 4vw;
+  }
+  .right-col .wrapper-card {
+    width: 100%;
+  }
+  .right-col .wrapper-card .title h1 {
+    color: #0141e9;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  /* .right-col .wrapper-card .content .text-sign-in a  {
+    margin: 0px;
+    margin-right: 4vw;
+    font-size: 16px;
+  }
+
+  .right-col .wrapper-card .content .text-sign-in p {
+    margin-left: 4vw;
+    font-size: 16px;
+  } */
+
+  .right-col .wrapper-card .content p{
+    margin-left: 4vw;
+  }
+
+  .right-col .wrapper-card .content h1 {
+    margin-left: 4vw;
+  }
+
+  .right-col .wrapper-card .content .login .input .eye-image {
+    position: relative;
+    left: 80vw;
+    bottom: 40px;
+  }
+
+  .col-lg {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .right-col .wrapper-card .content input {
+    width: 91%;
+  }
+
+  .right-col .wrapper-card .content .blue-button .sign-up {
+    width: 91%;
+    margin-bottom: 20px;
+  }
+
+  .right-col .wrapper-card .content .blue-button button {
+    width: 91%;
+  }
+
+  .fotstart h1 {
+    display: none;
+  }
+}

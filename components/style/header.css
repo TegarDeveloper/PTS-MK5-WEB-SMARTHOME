@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-ms-overflow-style {
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  /* color font */
+  --color-white: #ffffff;
+  --color-white2: #bababa;
+  --color-white3: #cdcdcd;
+  --color-white4: #adadad38;
+  --color-black: #000000;
+
+  /* background */
+  --bg-white: #d7e2e4;
+  --bg-grey: #cfd7d9;
+  --bg-dark: #1e1e1e;
+  --bg-dark2: #3e3e3e;
+  --bg-dark3: #5c605a;
+  --bg-dark4: #dedede;
+  --bg-input: #dcdde1;
+
+  --bg-navbar: #f0f0f0;
+
+  /* font size */
+  --px-10: 10px;
+  --px-12: 12px;
+  --px-14: 14px;
+  --px-16: 16px;
+  --px-18: 18px;
+  --px-20: 20px;
+  --px-22: 22px;
+  --px-24: 24px;
+  --px-28: 28px;
+  --px-30: 30px;
+  --px-36: 36px;
+  --px-46: 46px;
+
+  /* font weight */
+  --weight-300: 200;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar .container .navbar-brand {
+  opacity: 0 !important;
+}
+
+.navbar .container a {
+  color: var(--color-white2);
+}
+
+.navbar .container .navbar-brand {
+  opacity: 0%;
+}
+
+.navbar .container .collapse .navbar-nav .nav-active {
+  font-weight: 400;
+  border-bottom: 2px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.navbar .container .collapse .navbar-nav .nav-item a:hover {
+  color: var(--color-white);
+}
+
+.navbar .container .collapse .navbar-nav .nav-item .signup {
+  color: var(--color-white);
+  background-color: transparent;
+  border-color: var(--color-white);
+}
+
+.navbar .container .collapse .navbar-nav .nav-item .signup:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.sticky .container a,
+.sticky .container .navbar-brand {
+  color: var(--color-black);
+  opacity: 1 !important;
+}
+
+.sticky .container .navbar-brand {
+  opacity: 100%;
+  height: 50px;
+  color: var(--color-black);
+}
+
+.sticky .container .collapse .navbar-nav .nav-home {
+  font-weight: 400;
+  border-bottom: 2px solid var(--color-black);
+  color: var(--color-black);
+}
+
+.sticky .container .collapse .navbar-nav .nav-item .signup {
+  color: var(--color-black);
+  background-color: transparent;
+  border-color: var(--color-black);
+}
+
+.sticky .container .collapse .navbar-nav .nav-item .signup:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    background-color: var(--bg-navbar);
+  }
+
+  .navbar .container .navbar-brand {
+    opacity: 100% !important;
+    color: var(--color-black);
+  }
+
+  .navbar .container .collapse .navbar-nav .nav-home {
+    font-weight: 400;
+    border-bottom: 2px solid var(--color-black);
+    color: var(--color-black);
+    width: max-content;
+  }
+
+  #navbarMobile {
+    background-color: #f0f0f0;
+    margin-top: 28px;
+  }
+
+  .navbar .container .collapse .navbar-nav .nav-item a {
+    color: #000000a3 !important;
+  }
+
+  .navbar .container .collapse .navbar-nav .nav-item a:hover {
+    color: black !important;
+  }
+
+  #register {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px !important;
+  }
+
+  .navbar .container .collapse .navbar-nav .nav-item .signup {
+    color: var(--color-black);
+    background-color: transparent;
+    border-color: var(--color-black);
+    transition: 0.5s ease-in-out;
+  }
+
+  .navbar .container .collapse .navbar-nav .nav-item .signup:hover {
+    color: var(--bg-white) !important;
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+  }
+
+  #gap {
+    gap: 2px !important;
+  }
+}

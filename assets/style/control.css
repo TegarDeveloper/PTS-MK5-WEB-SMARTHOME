@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-white);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* color font */
+  --color-white: #ffffff;
+  --color-white2: #bababa;
+  --color-white3: #cdcdcd;
+  --color-white4: #adadad38;
+  --color-black: #000000;
+
+  /* background */
+  --bg-white: #d7e2e4;
+  --bg-grey: #cfd7d9;
+  --bg-dark: #1e1e1e;
+  --bg-dark2: #3e3e3e;
+  --bg-dark3: #5c605a;
+  --bg-dark4: #dedede;
+  --bg-input: #dcdde1;
+
+  /* font size */
+  --px-10: 10px;
+  --px-12: 12px;
+  --px-14: 14px;
+  --px-16: 16px;
+  --px-18: 18px;
+  --px-20: 20px;
+  --px-22: 22px;
+  --px-24: 24px;
+  --px-28: 28px;
+  --px-30: 30px;
+  --px-36: 36px;
+  --px-46: 46px;
+
+  /* font weight */
+  --weight-300: 200;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+}
+
+/* Left Column */
+.col-left {
+  padding: 20px 0px 0px 50px;
+  height: 100vh;
+  background-image: url(/images/control-gird.png);
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar .title-home {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.navbar .title-home h6 {
+  font-weight: var(--weight-600);
+  font-size: var(--px-20);
+  line-height: 12px;
+}
+
+.navbar .title-home p {
+  font-weight: var(--weight-400);
+  font-size: var(--px-12);
+}
+
+.navbar .input {
+  width: 55%;
+  margin-right: 40px;
+}
+
+.navbar input {
+  background-color: var(--bg-input);
+  border-radius: 82px;
+  border: none;
+  width: 350px;
+  margin-left: auto;
+  height: 44px;
+  padding-left: 20px;
+  font-size: var(--px-14);
+}
+
+.navbar .control-search {
+  position: absolute;
+  right: 70px;
+}
+
+.col-left {
+  max-width: 70%;
+}
+
+.col-left .wrapper-title {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.col-left .wrapper-title .title-room h1 {
+  font-size: var(--px-46);
+  color: var(--color-black);
+  font-weight: var(--weight-500);
+  line-height: 30px;
+}
+
+.col-left .wrapper-title .title-room p {
+  font-size: var(--px-20);
+  font-weight: var(--weight-400);
+}
+
+.col-left .wrapper-title .button {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.col-left .wrapper-title .button a {
+  text-decoration: none;
+  font-size: var(--px-14);
+  background-color: var(--color-white4);
+  color: var(--color-black);
+  padding: 10px 25px;
+  border-radius: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col-left .wrapper-title .button a.active {
+  text-decoration: none;
+  font-size: var(--px-14);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 10px 25px;
+  border-radius: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col-left .icon {
+  gap: 20px;
+}
+
+.col-left .icon img {
+  width: 45px;
+}b
+
+.col-left .img-house img {
+  position: absolute;
+  width: 820px;
+  left: 200px;
+  top: 120px;
+  z-index: -1;
+}
+
+.col-left .homepad h4 {
+  font-weight: var(--weight-500);
+  font-size: var(--px-22);
+  margin-bottom: 40px;
+}
+
+.col-left .homepad .card {
+  background-color: var(--bg-dark);
+  width: 20%;
+  padding: 8px 8px 0px 8px;
+  height: 160px;
+}
+
+.col-left .homepad .card p {
+  color: var(--color-white);
+  font-size: var(--px-14);
+  font-weight: var(--weight-500);
+}
+
+.col-left .homepad .card p span {
+  color: var(--color-white2);
+}
+
+.col-left .homepad .card .second-card {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-dark2);
+}
+
+.col-left .homepad .card .second-card img {
+  position: absolute;
+  width: 200px;
+  bottom: -30px;
+  left: -16px;
+}
+
+.col-left .homepad .wrapper .button {
+  margin-left: auto;
+  margin-top: 122px;
+}
+
+.col-left .homepad .wrapper a {
+  margin-right: 50px;
+  border-radius: 17px;
+  text-decoration: none;
+  padding: 16px 30px;
+  font-size: var(--px-16);
+  background-color: var(--bg-dark);
+  color: var(--color-white);
+}
+
+/* Right Column */
+.col-right {
+  height: 100vh;
+  max-width: 30%;
+  background-color: var(--bg-dark);
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.col-right::-webkit-scrollbar {
+  display: none;
+}
+
+.col-right .scroll {
+  overflow: auto;
+}
+
+.col-right .header {
+  margin-top: 30px;
+}
+
+.col-right .header .line {
+  margin-top: 16px;
+}
+
+.col-right .header .notif {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.col-right .header .profile {
+  margin-left: 20px;
+}
+
+.col-right .content {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.col-right .content h1 {
+  font-size: var(--px-30);
+  font-weight: var(--weight-400);
+  color: var(--color-white);
+  line-height: 44px;
+}
+
+.col-right .content h4 {
+  font-size: var(--px-20);
+  font-weight: var(--weight-400);
+  color: var(--color-white);
+  margin-top: 40px;
+}
+
+.col-right .content .img-icon {
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.col-right .content h5 {
+  font-size: var(--px-20);
+  font-weight: var(--weight-300);
+  color: var(--color-white);
+  margin-top: 60px;
+}
+
+.col-right .content h2 {
+  font-size: var(--px-28);
+  font-weight: var(--weight-400);
+  color: var(--color-white);
+}
+
+.col-right .slide-container {
+  margin: 0 0px;
+  overflow: hidden;
+}
+
+.col-right .owl-carousel {
+  margin-top: 20px;
+}
+
+.col-right .owl-carousel .owl-item {
+  width: 70px;
+  background-color: var(--color-white);
+  height: 100px;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.col-right .owl-carousel .owl-item .card {
+  width: 100%;
+  height: 20px;
+  border: none;
+  background-color: var(--color-white4);
+  border-radius: 0px;
+  border-start-start-radius: 11px;
+  border-start-end-radius: 11px;
+}
+
+.col-right .owl-carousel .owl-item h3 {
+  font-weight: var(--weight-600);
+  font-size: var(--px-24);
+  color: var(--color-black);
+  line-height: 20px;
+  margin-top: 12px;
+}
+
+.col-right .owl-carousel .owl-item p {
+  font-weight: var(--weight-400);
+  font-size: var(--px-16);
+  color: var(--color-black);
+}
+
+.col-right .owl-carousel .owl-item {
+  margin-right: 10px;
+}
+
+.col-right .owl-carousel .owl-item:last-child {
+  margin-right: 0;
+}
+
+.owl-controls {
+  display: none;
+  opacity: 0;
+}
+
+.col-right .time {
+  width: 100%;
+}
+
+.col-right .time .time-group {
+  margin-top: 40px;
+  height: 50px;
+}
+
+.col-right .time .time-group .image img {
+  width: 240px;
+}
+
+.col-right .time .time-group h2 {
+  font-weight: var(--weight-400);
+  font-size: var(--px-18);
+  color: var(--color-white);
+  opacity: 50%;
+}
+
+.col-right .time .time-group img {
+  margin-left: 40px;
+}
+
+.col-right .time .time-group .btn {
+  background-color: var(--bg-dark3);
+  position: relative;
+  right: 220px;
+  bottom: 18px;
+  height: 60px;
+  width: 200px;
+}
+
+.col-right .time .time-group .btn .text {
+  width: 130px;
+  margin-top: 5px;
+}
+
+.col-right .time .time-group .btn .txt1 {
+  font-weight: var(--weight-400);
+  font-size: var(--px-14);
+  color: var(--color-white);
+  text-align: left;
+}
+
+.col-right .time .time-group .btn p {
+  font-weight: var(--weight-400);
+  font-size: var(--px-10);
+  color: var(--color-white);
+  text-align: left;
+}
+
+.col-right .time .time-group .btn .img-button {
+  margin-top: 10px;
+}
